@@ -74,6 +74,13 @@ Otherwise it would be bad that using Docker for Master and EC2 for slaves ( as i
 
 5. wrapper scripts to setup build, test and Deploy will be invoked from Stage of Jenkins file
 
+6. Due to short of time, couldnt setup ansible (using docker only) and invoke everything as roles instead of discrete shell script for each task
+
+7. master_script.sh would invoke sub scripts to 
+	a. Install required sogftware on EC2 system
+	b. Pushing 'Jenkinfile' to master and update the pipeline which will take care of pulling the code and build, test and deply
+
+
 ## Running the tests
 
 Mainly unit testing by using Simple curl based command to check http urls 
