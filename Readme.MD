@@ -6,11 +6,11 @@ Service Reliability Engineer - Technical Test
 
 task is to configure server: preferably using AWS/Azure free tier or vagrant box.
 
-· Server needs to serve:
+Â· Server needs to serve:
 	o    The dev environment
 	o    And host tools required for CI/CD.
 
-· Write script to
+Â· Write script to
 
 		o    Install required software for CI/CD setup. We leave this with you to decide what is important.
 		o    Set up CI to fetch the codebase from https://github.com/ahfarmer/emoji-search.git  and package it for deployment.
@@ -67,15 +67,10 @@ Otherwise it would be bad that using Docker for Master and EC2 for slaves ( as i
 	Ensured that it runs on specific agents where toolchain is available -  agent { label "reactJS" }
         
 	MOdular phases            
-				stage('Checkout') {
-  - to clone git repo               
-
-           			stage('Build') {
-     - all build instructions
-				stage('Test') {
-      - all unit test cases        
-				stage('Deploy') {
-    - finally deployment, webservice would be available        
+	stage('Checkout')   - to clone git repo               
+        stage('Build') - all build instructions
+	stage('Test') - all unit test cases        
+	stage('Deploy') - finally deployment, webservice would be available        
 
 5. wrapper scripts to setup build, test and Deploy will be invoked from Stage of Jenkins file
 
@@ -104,15 +99,3 @@ AWS EC2, Dockers, Jenkins, shell scripting
 * Google
 * Inspiration
 * AWS
-
-
-
-
-
-6. 
-
-7. 
-
-
-
-
